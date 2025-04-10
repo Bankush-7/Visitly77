@@ -1152,9 +1152,9 @@ const sampleListings = [
     commercial: false,
   },
   {
-    title: "Secluded Beach House in Costa Rica",
+    title: "New Home",
     description:
-      "Escape to a secluded beach house on the Pacific coast of Costa Rica. Surf, relax, and unwind.",
+      "Welcome to Visitly",
     image: [
       {
         filename: "listingimage1",
@@ -1177,11 +1177,11 @@ const sampleListings = [
         url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/552636506.jpg?k=1edbd2f0b4c5b000da0bf18c5cf1f176a183caf85225f12eb2857a8740b3e1c0&o=&hp=1",
       }
     ],
-    price: 10,
-    location: "Costa Rica",
-    country: "Costa Rica",
+    price: 1100,
+    location: "Delhi",
+    country: "India",
     geometry: {
-      coordinates: [-84.092347, 9.932191],
+      coordinates: [77.1025, 28.7041],
       type: "Point",
     },
     sustainable: false,
