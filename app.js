@@ -22,8 +22,8 @@ const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
 const rentalRequestsRouter = require("./routes/rentalRequests.js");
 
-const dbUrl = "mongodb://127.0.0.1:27017/wanderlust";
-// const dbUrl = process.env.ATLASDB_URL;
+// const dbUrl = "mongodb://127.0.0.1:27017/wanderlust";
+const dbUrl = process.env.ATLASDB_URL;
 
 main()
   .then(() => {
@@ -162,8 +162,8 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://localhost:8080/auth/google/callback",
-      // callbackURL : "https://visitly-live.onrender.com/auth/google/callback",  // Use your actual domain
+      // callbackURL: "http://localhost:8080/auth/google/callback",
+      callbackURL : "https://visitly-live.onrender.com/auth/google/callback",  // Use your actual domain
     },
     async (accessToken, refreshToken, profile, done) => {
       try {
